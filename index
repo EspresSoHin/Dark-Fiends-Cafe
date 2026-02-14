@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Final Project-Restaurant Menu</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+        <link href="styles.css" rel="stylesheet" />
+    </head>
+
+
+    <body>
+        <header>
+            <img id="header-img" width="100" height="200" src="assets/fho9lxfxoae-kct.png" alt="Pixel banner" />
+            <h1><a id="Sohace" href="https://www.codedex.io/@SohinAce">Dark Fiends Café</a></h1>
+            <p id ="tagline"> Where outcasts come for a feast. </p>
+            <nav id="navi">
+                <ul id="nav-liste">
+                    <li>
+                        <a href="#Menu">Menu</a>
+                    </li>
+                    <li>
+                        <a href="#Order-form">Place your order</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <hr id="top" />
+
+        <main>
+            <section class="Partie">
+                <h2 id="Menu">𒌐 Menu 𒌐</h2>
+                <article class="menu-item">
+                    <h3>𖤝 Blood Tea 𖤝</h3>
+                    <figure>
+                        <img width="100" src="assets/teacup-1.png.png" alt="teacup-of-blood" />
+                        <figcaption class="price"><em>🕯 3 Gold 🕯</em></figcaption>
+                    </figure>
+                    <p class="description"> A bitter-sweet infusion with fine de-ironed blood* and a hint of
+                        sinnamon.<br /><strong>*Bloodwood Vegan-option available.</strong> <br /></p>
+                </article>
+
+                <article class="menu-item">
+                    <h3>𖤝 Candied Ovary Tart 𖤝</h3>
+                    <figure>
+                        <img width="100" src="assets/cherrytart-1.png.png" alt="sweet-tart" />
+                        <figcaption class="price"><em>🕯 7 Gold 🕯 </em></figcaption>
+                    </figure>
+                    <p class="description"> Caramelized harpy ovaries over a delicious fleshy and juicy tart. 100%
+                        Female-made. <br /></p>
+                </article>
+
+                <article class="menu-item">
+                    <h3>𖤝 Damned Souls x6 𖤝</h3>
+                    <figure>
+                        <img width="100" src="assets/jarofsouls-1.png.png" alt="SoulJar" />
+                        <figcaption class="price"><em>🕯 5 Gold & 5 Silver 🕯</em></figcaption>
+                    </figure>
+                    <p class="description"> A savory finger-dish to share with your devilish loved ones! <br /></p>
+                </article>
+
+                <article class="menu-item">
+                    <h3>𖤝 Higanbana Chalice 𖤝</h3>
+                    <figure>
+                        <img width="100" src="assets/chalice-1.png.png" alt="Chalice-spiderlily" />
+                        <figcaption class="price"><em> 🕯 4 Gold 🕯 </em></figcaption>
+                    </figure>
+                    <p class="description"> A exotic brew of fermented Spider Lilies, saké and a spritz of main
+                        character
+                        despair.<br /></p>
+                </article>
+
+                <article class="menu-item" id="brunch">
+                    <h3>𖤝 Brunch Special: Black Cheese & Flower Poison Wine 𖤝</h3>
+                    <figure>
+                        <img width="75" src="assets/cheese-1.png.png" alt="dark-cheese" />
+                        <img width="110" src="assets/winebottle-1.png.png" alt="Wine" />
+                        <figcaption class="price"><em>🕯 15 Gold 🕯</em></figcaption>
+                    </figure>
+                    <p class="description"> A convivial platter of exquisite 'Fromages des ombres' served with Maison
+                        Noire's Datura and Nightshade wine. Bon appétit. <br /></p>
+                </article>
+            </section>
+
+            <hr id="middle" />
+
+            <section class="Partie">
+                <h2 id="Order-form">𒌐 Place your order 𒌐</h2>
+                <form action="https://youtube.com/clip/UgkxHVGVjZicuu2uUnTG3eghCKHJesWfsTBv?si=mkZM0q6xsKE87rPT" method="get" target="_blank">
+                    <details id="OrdersPart">
+                        <summary>What would you like?</summary>
+                        <ul id="order-list">
+                            <li> <label for="blood-tea"> Blood Tea</label> <br><input type="number"
+                                id="blood-tea" min="0" required>
+                            </li><br>
+                            <li> <label for="ovary-tart"> Candied Ovary Tart </label><br><input type="number"
+                                id="ovary-tart" min="0" required>
+                            </li><br>
+                            <li> <label for="damned-souls"> Damned Souls </label><br><input type="number"
+                                id="damned-souls" min="0" required>
+                             </li><br>
+                            <li> <label for="higanbana-chalice"> Higanbana Chalice </label><br><input type="number"
+                                id="higanbana-chalice" min="0" required>
+                             </li><br>
+                             <li> <label for="brunch-special"> Brunch Special </label><br><input type="number"
+                                id="brunch-special" min="0" required>
+                             </li><br>
+                        </ul>
+                    </details>
+                    <br><br>
+                    <details id="Add-onsPart">
+                        <summary>Would you like to add something?</summary><br>
+                        <input type="checkbox" name="ghost-dust" class="Add-ons">Ghost Dust<br>
+                        <input type="checkbox" name="vampire-syrup" class="Add-ons">Vampire Syrup<br>
+                        <input type="checkbox" name="spider-chips" class="Add-ons">Spider chips<br>
+                    </details>
+                    <br><br>
+                    <label for="Special-options">
+                    <p id="request-text">Any special requests? ex: Vegan Blood Tea.</p><br>
+                    <textarea id="Special-options" rows="4" cols="30" placeholder="Put a spell on the cute barista"
+                        maxlength="250"></textarea></label>
+                    <br><br>
+                    <input type="submit" value="Go to Checkout">
+                </form>
+        </main>
+
+        <hr id="bottom" />
+
+        <footer>
+            <img class="rose-left" src="assets/rose-left.png"
+                alt="rose-icon-left">
+            <img class="rose-right" src="assets/rose-right.png"
+                alt="rose-icon-right">
+
+            <div class="footer-content">
+                <p id ="outro">
+                    ☽ Made with love by Sohin Ace - @Sohace ☾
+                </p>
+                <div class="footer-icons">
+                    <a href="https://github.com/EspresSoHin" target="_blank">
+                        <img class="social-icon" src="assets/2111432.png" alt="GitHub-icon">
+                    </a>
+                    <a href="https://sohinace.itch.io/" target="_blank">
+                        <img class="social-icon" src="assets/itch-io-logo-png_seeklogo-449206.png" alt="Itch.io-icon">
+                    </a>
+                </div>
+            </div>
+
+        </footer>
+    </body>
+</html>
