@@ -31,12 +31,12 @@ section {
 
 /* Curseur par défaut partout */
 html, body {
-  cursor: url("assets/gothiccursor-1.png.png") 0 0, default;
+  cursor: url("assets/gothiccursor-1.png") 0 0, default;
 }
 
 /* Curseur pointer pour les liens et boutons */
 a, button, input[type="submit"] {
-  cursor: url("assets/glovecursor-.png.png") 0 0, pointer;
+  cursor: url("assets/glovecursor.png") 0 0, pointer;
 }
    
 
@@ -276,7 +276,7 @@ details[open] summary::marker {
 
 
 summary {
-  cursor: url('assets/glovecursor-.png.png');
+  cursor: url('assets/glovecursor.png') 0 0, pointer;
   transition: color 0.3s ease;
   font-size: 1.3em;
   padding: 0.5em;
@@ -330,8 +330,8 @@ form{
   height: 10vh;
   width: 60%;
   border: 0;
-  background: url("assets/rob-mtntbat-1--removebg-preview2.png") left center no-repeat,
-              url("assets/rob-mtntbat-1--removebg-preview.png") right center no-repeat;
+  background: url("assets/rob-mtntbat-2.png") left center no-repeat,
+              url("assets/rob-mtntbat-1.png") right center no-repeat;
   background-size: contain;
   position: relative;
   margin: 0 auto;
@@ -355,7 +355,7 @@ form{
 height: 70px;
 width: 100%;
 border:0;
-background: url("assets/rose-1.png.png") no-repeat scroll center;
+background: url("assets/rose-1.png") no-repeat scroll center;
 background-size:contain;
 position: relative;
 bottom: 10px;
@@ -470,7 +470,7 @@ input[type="number"]:focus {
   border: 2px solid #633144;
   border-radius: 4px;
   background-color: rgba(21, 23, 29, 0.9);
-  cursor: url('assets/glovecursor-.png.png') 0 0, pointer;
+  cursor: url('assets/glovecursor.png') 0 0, pointer;
   position: relative;
   margin-right: 10px;
   vertical-align: middle;
@@ -499,7 +499,7 @@ input[type="number"]:focus {
 #Add-onsPart label {
   color: white;
   font-size: 1.1em;
-  cursor: url('assets/glovecursor-.png.png') 0 0, pointer;
+  cursor: url('assets/glovecursor.png') 0 0, pointer;
   transition: color 0.3s ease;
 }
 
