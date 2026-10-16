@@ -119,7 +119,7 @@ strong{
 }
 
 .price{
-  color: white; /*pas sure*/
+  color: white;
   text-shadow:#26272e 5px 0 15px;
 }
 
@@ -222,6 +222,7 @@ margin:0;
                0 0 20px #7C7D84,
                0 0 30px rgba(124, 125, 132, 0.5);
 }
+
 /*===================MISE EN FORME================*/
 
 .Partie {
@@ -324,6 +325,29 @@ form{
   text-align: center;
 }
 
+
+/*sound button*/
+
+.musicToggle {
+  position: sticky;
+  bottom: 20px;
+  left: 20px;
+  background-color: #26272e;
+  color: #cb485e;
+  border: 3px solid #cb485e;
+  border-radius: 7%;
+  width: 2.1em;
+  height: 2.1em;
+  font-size: 1.5em;
+  transition: all 0.3s ease;
+  padding: 0.4em;
+}
+
+.musicToggle:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2) drop-shadow(0 0 10px rgba(203, 72, 94, 0.5));
+}
+
 /*================DECORATIONS===================*/
 
 #top, #bottom {
@@ -405,8 +429,6 @@ footer {
 .social-icon:hover {
   transform: scale(1.1);
 }
-
-
 
 
 /*================FORM===================*/
