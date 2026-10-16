@@ -10,24 +10,22 @@ BGM.volume = 0.5;
         isBGMPlayed = true;
     }
 
-document.body.onclick = ()=>{
-    if(isBGMPlayed) return ;
-    playBGM();
-}
-
 document.addEventListener('scroll', ()=>{
     if(isBGMPlayed) return ;
     playBGM();
 })
 
+//document.body.onclick = ()=>{
+    //if(isBGMPlayed) return ;
+    //playBGM();
+//}
 
-//bouton pour activer, toggle le son ou désactiver le son
+document.body.addEventListener('click', playBGM);
 
 let soundOn = document.getElementById("musicIconOn");
 let soundOff = document.getElementById("musicIconOff");
 
 let soundbutton = document.querySelector(".musicToggle");
-
 
 let isMuted = false;
 BGM.muted = isMuted;
@@ -40,8 +38,3 @@ soundbutton.addEventListener("click", () => {
     soundOn.style.display = isMuted ? "none" : "block";
     soundOff.style.display = isMuted ? "block" : "none";
   });
-
-
-//ou 
-//soundbutton.src = soundOff
-//<input type="range"> et le relier à BGM.volume. C'est très pratique pour laisser les visiteurs régler leur propre ambiance sonore. 🎶
