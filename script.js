@@ -10,17 +10,15 @@ BGM.volume = 0.5;
         isBGMPlayed = true;
     }
 
+document.body.addEventListener('click', playBGM);
+document.body.addEventListener('touchstart', playBGM); // For mobile devices
+
 document.addEventListener('scroll', ()=>{
     if(isBGMPlayed) return ;
     playBGM();
 })
 
-//document.body.onclick = ()=>{
-    //if(isBGMPlayed) return ;
-    //playBGM();
-//}
 
-document.body.addEventListener('click', playBGM);
 
 let soundOn = document.getElementById("musicIconOn");
 let soundOff = document.getElementById("musicIconOff");
